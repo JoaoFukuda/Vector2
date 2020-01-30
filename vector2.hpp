@@ -90,7 +90,7 @@ struct Vector2
 };
 
 template <class T>
-std::ostream &operator<<(std::ostream &stream, const Vector2<T> vector2)
+std::ostream &operator<<(std::ostream &stream, const Vector2<T> &vector2)
 {
 	stream << "(" << vector2.x << ", " << vector2.y << ")";
 	return stream;

@@ -13,6 +13,8 @@ Just include the `vector2.hpp` file and use it like so:
 
 Vector2<float> position;
 Vector2<int> target;
+
+// Do more stuff
 ```
 
 No need to compile or link it anywhere.

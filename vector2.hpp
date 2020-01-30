@@ -82,10 +82,15 @@ struct Vector2
 		return {static_cast<U>(x), static_cast<U>(y)};
 	}
 
+	double DotProduct(const Vector2<T> &other = *this) const
+	{
+		return (x * other.x) + (y * other.y);
+	}
+
 	double Distance(const Vector2<T> &other = {0, 0}) const
 	{
 		Vector2<T> difference {other.x - x, other.y - y};
-		return sqrt(((difference.x)*(difference.x))+((difference.y)*(difference.y)));
+		return sqrt(difference.DotProduct());
 	}
 };
 
